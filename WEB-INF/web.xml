@@ -1,0 +1,115 @@
+<web-app>
+    <display-name>
+        CNT 4714 Spring 2024 Project 4
+    </display-name>
+    <description>
+        This is the Web Application for CNT 4714 Spring 2024 Project 4
+    </description>
+
+    <servlet>
+        <description>
+            This servlet is for the authentication.html page
+        </description>
+        <servlet-name>alpha</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>alpha</servlet-name>
+        <url-pattern>/authentication.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the clientHome.jsp page
+        </description>
+        <servlet-name>beta</servlet-name>
+        <servlet-class>ClientUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>beta</servlet-name>
+        <url-pattern>/clientHome</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the rootHome.jsp page
+        </description>
+        <servlet-name>charlie</servlet-name>
+        <servlet-class>RootUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>charlie</servlet-name>
+        <url-pattern>/rootHome</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the dataentryuserHome.jsp page, supplier form
+        </description>
+        <servlet-name>delta1</servlet-name>
+        <servlet-class>DataEntryUserSuppliersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delta1</servlet-name>
+        <url-pattern>/dataentryuserHomeSuppliers</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the dataentryuserHome.jsp page, parts form
+        </description>
+        <servlet-name>delta2</servlet-name>
+        <servlet-class>DataEntryUserPartsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delta2</servlet-name>
+        <url-pattern>/dataentryuserHomeParts</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the dataentryuserHome.jsp page, jobs form
+        </description>
+        <servlet-name>delta3</servlet-name>
+        <servlet-class>DataEntryUserJobsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delta3</servlet-name>
+        <url-pattern>/dataentryuserHomeJobs</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the dataentryuserHome.jsp page, shipments form
+        </description>
+        <servlet-name>delta4</servlet-name>
+        <servlet-class>DataEntryUserShipmentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delta4</servlet-name>
+        <url-pattern>/dataentryuserHomeShipments</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <servlet>
+        <description>
+            This servlet is for the accountantHome.jsp page
+        </description>
+        <servlet-name>fox</servlet-name>
+        <servlet-class>AccountantUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fox</servlet-name>
+        <url-pattern>/accountantHome</url-pattern>
+        <http-method>POST</http-method>
+    </servlet-mapping>
+
+    <!-- <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list> -->
+</web-app>
